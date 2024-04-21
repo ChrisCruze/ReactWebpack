@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
 	entry: path.join(__dirname, "/src/index.js"),
 	output: {
-		filename: "example-webpack.js",
+		filename: "example-webpack2.js",
 		path: "/Users/chriscruz/Dropbox/Apps/site44/chriscross.site44.com/js/",
 	},
 	module: {
@@ -44,7 +44,7 @@ module.exports = {
 		],
 	},
 	plugins: [
-		new webpack.IgnorePlugin(/^pg-native$/),
+		new webpack.IgnorePlugin({ resourceRegExp: /^pg-native$/ }),
 		new webpack.DefinePlugin({
 			"process.env.BROWSER": false,
 			__DEV__: process.env.NODE_ENV !== "production",
