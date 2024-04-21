@@ -1,14 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
-import configureStore from "./Reducers/store";
-import App from "./App.js";
+//import App from "./App.js";
+const ExamplePage = () => <h1>Example Page</h1>;
 
-const store = configureStore();
-
-ReactDOM.render(
-	<Provider store={store}>
-		<App />
-	</Provider>,
-	document.getElementById("root")
-);
+ReactDOM.render(<ExamplePage />, document.getElementById("root"));

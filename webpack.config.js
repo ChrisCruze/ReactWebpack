@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
 	entry: path.join(__dirname, "/src/index.js"),
 	output: {
-		filename: "quantifiedself.js",
+		filename: "example-webpack.js",
 		path: "/Users/chriscruz/Dropbox/Apps/site44/chriscross.site44.com/js/",
 	},
 	module: {
